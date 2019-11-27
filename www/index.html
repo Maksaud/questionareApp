@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--
+  Customize this policy to fit your own app's needs. For more guidance, see:
+      https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+  Some notes:
+      * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+      * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+      * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+          * Enable inline JS: add 'unsafe-inline' to default-src
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>My App</title>
+
+  <link rel="stylesheet" href="framework7/css/framework7.bundle.min.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div id="app">
+    <div class="view-main">
+      <div class="page homePage" data-name="Home">
+        <div class="page-content">
+          <h1 class="HomeTitle">Welcome</h1>
+          <div class="item-inner StartName">
+            <div class="item-input-wrap">
+              <input id="Name" type="text" placeholder="Name">
+            </div>
+          </div>
+          <a href="#" id="start-btn" data-popup=".questionspage1" class="button button-large button-fill popup-open startButton">Start</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="WholePage" class="popup questionspage1" style="background-color:#42DE47; color:white;">
+      <div class="view">
+
+
+
+        <div id="QuestionsPage">
+          <h1 id="Question" class="Question">Question</h1>
+          <div class="block ImageBox"><img id="ImageBox"></div>
+          <div id="answers" class="answers">
+            <div class="row no-gap">
+              <div id="btn1" class="col-50 EachAnswers" style="background-color:#DE4242;">Answer1</div>
+              <div id="btn2" class="col-50 EachAnswers" style="background-color:#2971C4;">Answer2</div>
+            </div>
+            <div class="row no-gap">
+              <div id="btn3" class="col-50 EachAnswers" style="background-color:#870DC2;">Answer1</div>
+              <div id="btn4" class="col-50 EachAnswers" style="background-color:#DED83C;">Answer2</div>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="ScorePage" class="hide">
+          <h1 id="Score"></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Cordova -->
+  <!--
+  <script src="cordova.js"></script>
+  -->
+
+  <!-- Framework7 library -->
+  <script src="framework7/js/framework7.bundle.min.js"></script>
+
+  <!-- App routes -->
+  <script src="js/routes.js"></script>
+
+  <!-- Your custom app scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+.homePage{
+    width:100%;
+    text-align: center;
+}
+
+.HomeTitle{
+    padding-bottom:100px;
+}
+
+.StartName{
+    margin:0 20%;
+    padding-bottom:30%;
+}
+
+.StartName input{
+    text-align:center;
+    width:100%;
+    border:2px solid rgba(0, 0, 0, 0.171);
+}
+
+.startButton{
+    --f7-button-bg-color:#42DE47;
+    margin:0 10%;
+}
+
+.ImageBox{
+    border:2px black solid;
+    position:relative;
+    height:50vh;
+    margin:0 30px;
+    padding:0;
+}
+
+#ImageBox{
+    width:100%;
+    height:100%;
+    padding:0;
+}
+
+.answers{
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+.answers .EachAnswers{
+    text-align:center;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.Question{
+    width:100%;
+    text-align:center;
+}
+
+.hide{
+    display:none;
+}
+
+#ScorePage{
+    height:100vh;
+    padding:0;
+    margin:0;
+}
+
+#Score{
+    margin:0;
+}

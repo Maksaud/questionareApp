@@ -1,0 +1,19 @@
+/* Your app styles here */
+body{
+    background-image:url('../img/background.jpeg')
+    ;
+}
+.navbar-inner .right{
+    margin-right:10px;
+}
+
+.homebutton{
+    position:absolute;
+    top:30%;
+    left:25%;
+    background: #222222;
+    color:white;
+    font-size:30px;
+    padding:20px;
+    height:80px;
+}
